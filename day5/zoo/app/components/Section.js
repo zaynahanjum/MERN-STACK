@@ -1,11 +1,13 @@
 export default function Section({ sectionName, animals }) {
     return (
         <div>
-            <h1>{sectionName}</h1>
+            <h1 style={{
+                fontSize: "20px",
+
+            }}>{sectionName}</h1>
             <div style={{
                 display: "flex",
-                flexxDirection: "row",
-                // alignItems:
+                flexDirection: "row",
                 justifyContent: "space-around"
             }}>
                 {
@@ -14,6 +16,8 @@ export default function Section({ sectionName, animals }) {
                             <div key={animal.id} style={{
                                 display: "flex",
                                 flexDirection: "column",
+                                justifyContent: "center",
+                                alignItems: "center",
                                 width: "300px",
                                 height: "250px"
                             }}>

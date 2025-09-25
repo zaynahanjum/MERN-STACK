@@ -13,7 +13,7 @@ export default function Home() {
       "id": 2,
       "name": "Dolphin",
       "description": "An intelligent marine mammal known for its playful behavior, echolocation abilities, and strong social bonds within pods.",
-      "imageUrl": "https://planetedauphins.com/wp-content/uploads/2023/06/caracterisitique-dauphin.jpeg"
+      "imageUrl": "https://news.harvard.edu/wp-content/uploads/2024/10/2500dolphin.jpg?resize=1680%2C945"
     },
     {
       "id": 3,
@@ -77,12 +77,14 @@ export default function Home() {
       }}>
         Wild Haven Zoo
       </h1>
-      <p>
+      <p style={{
+        marginBottom: "20px",
+      }}>
         Welcome to Wild Haven Zoo, where adventure and wildlife come together! Explore our diverse habitats, meet fascinating animals, and embark on unforgettable journeys. Whether you're a family, a school group, or a solo explorer, there's something for everyone at Wild Haven Zoo. Join us in celebrating the wonders of the animal kingdom and creating lasting memories!
       </p>
-      <Section sectionName = "Aquatic Animals" animals = {aquaticAnimals} />
-      <Section sectionName = "Land Animals" animals = {landAnimals} />
-      <Section sectionName = "Reptiles" animals = {reptiles} />
+      <Section sectionName="Aquatic Animals" animals={aquaticAnimals} />
+      <Section sectionName="Land Animals" animals={landAnimals} />
+      <Section sectionName="Reptiles" animals={reptiles} />
     </div>
   )
 }
